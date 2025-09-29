@@ -21,15 +21,20 @@
         smooth=" true" smoothCount="5" smoothTolerance=".05" smoothThreshold="5" sourceWidth="800" sourceHeight="600"
         displayWidth="1280" displayHeight="720">
 
-
+        <a-assets>
+            <img id="img1" src="./MIKU.png">
+          </a-assets> 
+          
 
         <a-marker type='barcode' value='0'>
 
-            <a-text value="Hello !" side="double" position="0 0 -1" rotation="270 0 0" width="8" color="red"
+            <a-image src="#img1" rotation="270 0 0" width="2" height="3"></a-image>
+
+            <a-text value="Hello !" side="double" position="0 3 -0.5" rotation="270 0 0" width="8" color="blue"
                 align="center">
             </a-text>
 
-            <a-text value="I'm LiHe !" side="double" position="0 -2 -1" rotation="270 0 0" width="8" color="yellow"
+            <a-text value="Hatsune Miku" side="double" position="0 2 0.5" rotation="270 0 0" width="8" color="green"
                 align="center">
             </a-text>
         </a-marker>
